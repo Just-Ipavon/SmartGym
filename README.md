@@ -21,4 +21,4 @@ Our team is working to create a useful registration platform for gyms that can a
 [Canva Slideshow](https://www.canva.com/design/DAFRWle3S-Q/7Cd6Np_zPbcCDcuqqesL1Q/view?utm_content=DAFRWle3S-Q&utm_campaign=designshare&utm_medium=link2&utm_source=sharebutton)
 
 
-[preview](https://just-ipavon.github.io/Tech-web/)
+[preview](http://3.76.160.189:8080/)
