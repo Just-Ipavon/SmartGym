@@ -1,0 +1,58 @@
+{% extends "template.html" %}
+
+{% block content %}
+
+
+
+<div class="tv-inner-banner-image" style="background-image: url('/static/images/Image7.jpg')">
+    <div class="tv-opacity-medium tv-bg-pink"></div>
+    <div class="tv-inner-banner-text">
+        <h3>User Information</h3>
+        <div class="tv-breadcrumb">
+            <a href="{{url_for('home')}}"><span>Home</span></a>&nbsp;&nbsp;&nbsp;/&nbsp;&nbsp;&nbsp;<span>User Information</span>
+        </div>
+    </div>
+</div>
+<section class="tv-section-padding">
+    <div class="container">
+        <div >
+            <div >
+                <div class="price-box active">
+                    <div class="price-empty">
+                    </div>
+                    <div class="price-quantity">
+                        <div class="qnty-box">
+                            <div class="box-element">
+                                <h5 >User</h5>
+                                <h5>Information</h5>
+                            </div>
+                        </div>
+                        <div class="price-dtl">
+                            <ul>
+                                <li class="first-child">First Name:</li>
+                                <p>{{ session['user']['first_name'] }}</p>
+                                <li>Last Name:</li>
+                                <p>{{ session['user']['last_name'] }}</p>
+                                <li>email Name:</li>
+                                <p>{{ session['user']['email'] }}</p>
+                                <li>Birthday:</li>
+                                <p>{{ session['user']['birthday'] }}</p>
+                                <li>Gender:</li>
+                                <p>{{ session['user']['gender'] }}</p>
+                            </ul>
+                            <div class="tv-bodiez-button">
+                                <a href="{{url_for('Result')}}">Workout</a>
+                            </div>
+                            <div class="tv-bodiez-button">
+                                <a href="/user/signout">SignOut</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+            </div>
+             
+        </div>
+</section>
+
+{% endblock %}

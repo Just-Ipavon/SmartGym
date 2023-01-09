@@ -1,0 +1,1664 @@
+
+/* FONTS*/
+@import '../fonts/elegant_font/css/style.css';
+@import '../fonts/et-line-font/style.css';
+@import url('https://fonts.googleapis.com/css?family=Muli:400,600,700,800,900');
+@import url('https://fonts.googleapis.com/css?family=Concert+One');
+/*font-family: 'Concert One', cursive;*/
+
+html {
+    font-family: sans-serif;
+    -ms-text-size-adjust: 100%;
+    -webkit-text-size-adjust: 100%;
+    font-size: 13px;
+    -webkit-tap-highlight-color: transparent;
+    margin: 0;
+    padding: 0;
+}
+a, button {
+    text-decoration: none;
+    cursor: pointer;
+    transition: all 0.3s ease 0s;
+}
+a {
+    color: inherit;
+}
+a:hover,
+a:active,
+a:focus {
+    color: inherit;
+    outline: none !important;
+    text-decoration: none;
+}
+ul , li{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+*::-moz-selection {
+    background-color: #fc328a;
+    color: #ffffff;
+}
+
+::selection{
+    background-color: #fc328a;
+    color: #ffffff;
+}
+/*typography*/
+body {
+    margin: 0;
+    color: #000;
+    font-family: 'Muli', sans-serif;
+    font-size: 13px;
+    background-color: #fff;
+}
+h1,h2,h3,h4,h5,h6,p {
+    margin: 0;
+    padding: 0;
+}
+
+header{
+	position: fixed;
+	width: 100%;
+	top: 0;
+	right: 0;
+	z-index: 1000;
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	background: #000;
+	opacity: 80%;
+	padding: 28px 12%;
+	transition: all .50s ease;
+}
+.logo{
+	display: flex;
+	align-items: center;
+}
+.logo i{
+	color: #fc328a;
+	font-size: 38px;
+	margin-right: 3px;
+}
+.logo span{
+	color: #fff;
+	font-size: 1.7rem;
+	font-weight: 600;
+}
+.navbar{
+	display: flex;
+}
+.navbar a{
+	color: #fff;
+	font-size: 1.1rem;
+	font-weight: 500;
+	padding: 5px 0;
+	margin: 0px 30px;
+	transition: all .50s ease;
+}
+.navbar a:hover{
+	color: #fc328a;
+}
+.navbar a.active{
+	color: #fc328a;
+}
+.main{
+	display: flex;
+	align-items: center;
+}
+.main a{
+	
+	margin-right: 25px;
+	margin-left: 10px;
+	color: #fff;
+	font-size: 1.1rem;
+	font-weight: 500;
+	transition: all .50s ease;
+}
+
+.center {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 40%;
+  }
+
+.user{
+	display: flex;
+	align-items: center;
+}
+.user i{
+	color: #fc328a;
+	font-size: 28px;
+	margin-right: 7px;
+}
+.main a:hover{
+	color: #fc328a;
+}
+#menu-icon{
+	font-size: 35px;
+	color: #fff;
+	cursor: pointer;
+	z-index: 10001;
+	display: none;
+}
+
+.main ul li{
+	list-style-type: circle;
+	background-color: #fc328a;
+}
+
+@media (max-width: 1280px){
+	header{
+		padding: 14px 2%;
+		transition: .2s;
+	}
+	.navbar a{
+		padding: 5px 0;
+		margin: 0px 20px;
+	}
+}
+
+@media (max-width: 1090px){
+	#menu-icon{
+		display: block;
+	}
+	.navbar{
+		position: absolute;
+		top: 100%;
+		right: -100%;
+		width: 270px;
+		height: 29vh;
+		background: #fc328a;
+		display: flex;
+		flex-direction: column;
+		justify-content: flex-start;
+		border-radius: 10px;
+		transition: all .50s ease;
+	}
+	.navbar a{
+		display: block;
+		margin: 12px 0;
+		padding: 0px 25px;
+		transition: all .50s ease;
+	}
+	.navbar a:hover{
+		color: #fff;
+		transform: translateY(5px);
+	}
+	.navbar a.active{
+		color: #fff;
+	}
+	.navbar.open{
+		right: 2%;
+	}
+}
+/*End typography*/
+
+/*Spacing Value*/
+.tv-offspace-top-20 
+{
+    margin-top:20px;
+}
+.tv-offspace-top-30 {
+    margin-top: 30px;
+}
+.tv-offspace-top-40 {
+    margin-top: 40px;
+}
+.tv-offspace-top-50 {
+    margin-top: 50px;
+}
+.tv-offspace-bottom-20
+{
+    margin-bottom:20px;
+}
+.tv-offspace-bottom-30
+{
+    margin-bottom: 30px;
+}
+.tv-offspace-bottom-40
+{
+    margin-bottom: 40px;    
+}
+.tv-offspace-bottom-50
+{
+    margin-bottom: 50px;
+}
+/*Width-100*/
+.width-100
+{
+    width:100%;
+}
+/*Padding-0*/
+.padding-0{
+    padding:0;
+}
+/*Section Padding*/
+.tv-section-padding{
+    padding-top: 80px;
+}
+.tv-section-padding-70 {
+    padding-top: 70px;
+    padding-bottom: 70px;
+}
+.tv-section-footer-padding
+{
+    padding-top: 40px;
+}
+/*Section Padding End Here*/
+
+/*Navigation CSS*/
+.navbar{
+	display: flex;
+}
+
+.logo i{
+	color: #fc328a;
+	font-size: 38px;
+	margin-right: 3px;
+}
+.logo span{
+	color: #fff;
+	font-size: 1.7rem;
+	font-weight: 600;
+}
+.navbar{
+	display: flex;
+}
+.navbar a{
+	color: #fff;
+	font-size: 1.1rem;
+	font-weight: 500;
+	padding: 5px 0;
+	margin: 0px 30px;
+	transition: all .50s ease;
+}
+.navbar a:hover{
+	color: #fc328a;
+}
+.navbar a.active{
+	color: #fc328a;
+}
+
+.logo{
+	display: flex;
+	align-items: center;
+}
+
+.tv-navbar-custom {
+    background: rgba(0, 0, 0, 0.7) none repeat scroll 0 0;
+    padding: 0;
+}
+.tv-banner-image {
+    height: 600px;
+    position: relative;
+    width: 100%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    overflow: hidden;
+}
+.tv-inner-banner-image
+{
+    height: 400px;
+    position: relative;
+    width: 100%;
+    background-position: 0 50%;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.navbar-fixed-top {
+    border-radius: 0;
+    border:0;
+}
+.navbar {
+    margin-bottom:0px;
+}
+.navbar-default .navbar-brand:focus, .navbar-default .navbar-brand:hover
+{
+    color:#ffffff;
+}
+.navbar-default .navbar-brand
+{
+    color:#ffffff;
+}
+.tv-menu {
+    font-size: 11px;
+    font-weight: 800;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+}
+.navbar-default .navbar-nav > li > a {
+    color: #ffffff;
+}
+.navbar-default .navbar-nav > .active > a, .navbar-default .navbar-nav > .active > a:focus, .navbar-default .navbar-nav > .active > a:hover {
+    background-color: transparent;
+    color: #fc328a;
+}
+.navbar-default .navbar-nav > li > a:focus, .navbar-default .navbar-nav > li > a:hover {
+    background-color: rgba(0, 0, 0, 0);
+    color: #fc328a;
+}
+.tv-navbar-custom
+{
+    border: medium none;
+    margin-bottom: 0;
+    border-radius: 0;
+}
+.tv-drop-menu.open > a, .tv-drop-menu.open > a:focus, .tv-drop-menu.open > a:hover {
+    background-color: transparent !important;
+    color: #fc328a !important;
+}
+.dropdown-menu > li > a:focus, .dropdown-menu > li > a:hover {
+    background-color: #fc328a;
+    color: #ffffff;
+    text-decoration: none;
+}
+.dropdown-submenu .dropdown-menu {
+    top: 0;
+    margin:0 !important;
+    left: 100%;
+}
+.dropdown-submenu {
+    position: relative;
+}
+.tv-sub-menu {
+    background:#222222;
+    box-shadow: none;
+    min-width: 200px;
+    padding: 0;
+    left:15px;
+    border-radius: 0;
+    border:0;
+}
+.tv-sub-menu li a {
+    color: #ffffff;
+    font-size: 11px;
+    font-weight: 800;
+    letter-spacing: 2px;
+    line-height: 1px;
+    padding: 18px;
+    position: relative;
+    text-transform: uppercase;
+    transition: all 0.4s ease 0s;
+}
+.tv-drop-menu a > i {
+    margin-left: 5px;
+    line-height: 0;
+    transition: all 0.25s ease-out 0s;
+    font-weight: 800;
+}
+.Navigation-list {
+    display: block !important;
+}
+.Navigation-list.is-hidden {
+    display: none !important;
+}
+.navbar-nav > li > a {
+    line-height: 30px;
+}
+/*End Navigation CSS*/
+
+/*Banner CSS*/
+.tv-banner-text {
+    left: 10%;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    color:#ffffff;
+}
+.tv-banner-text h3 {
+    font-size: 20px;
+    font-weight: 700;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+}
+.tv-banner-text h1 {
+    font-family: "Concert One",cursive;
+    font-size: 60px;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+}
+.tv-banner-button > a {
+    border: 1px solid #ffffff;
+    display: inline-block;
+    font-weight: 700;
+    letter-spacing: 1px;
+    padding: 7px 20px;
+    text-transform: capitalize;
+}
+.tv-banner-button
+{
+    margin-top: 30px;
+    display: inline-block;
+}
+.tv-banner-button > a:hover
+{
+    color: #fc328a;
+    border:1px solid #fc328a;
+}
+/*End Banner CSS*/
+
+/*Service CSS*/
+.tv-service-block
+{
+
+    position: relative;
+    transform: translateY(-59px);
+    box-shadow: 1px 3px 14px -3px #000;
+    display: inline-block;
+    background: #fff none repeat scroll 0 0;
+    box-shadow: 1px 3px 14px -3px #000;
+}
+.tv-service-clear div:nth-child(3n+1)
+{
+    clear:both;
+}
+.tv-service-content {
+    padding: 57px 25px;
+}
+.tv-service-content
+{
+    text-align: center;
+}
+.tv-service-content > img {
+    width: 50px;
+}
+.tv-service-content p {
+    font-weight: 600;
+    letter-spacing: 1px;
+}
+.tv-service-content > h3 {
+    font-size: 20px;
+    font-weight: 700;
+    letter-spacing: 1px;
+    margin: 9px 0;
+}
+.tv-service-img {
+    position: relative;
+    width: 100%;
+}
+.tv-service-img:hover::before {
+    opacity: 1;
+}
+.tv-service-img::before {
+    background: rgba(252, 50, 138, 0.6) none repeat scroll 0 0;
+    content: "";
+    height: 100%;
+    left: 0;
+    opacity: 0;
+    position: absolute;
+    top: 0;
+    transition: all 0.5s ease 0s;
+    width: 100%;
+}
+/*End Service CSS*/
+
+/*Gym Instrcutor CSS*/
+.tv-section-title > h3 {
+    font-family: "Concert One",cursive;
+    font-size: 30px;
+    letter-spacing: 1px;
+    margin-bottom: 30px;
+    text-transform: uppercase;
+}
+.tv-banner-section-title > h3 {
+    font-family: "Concert One",cursive;
+    font-size: 30px;
+    margin-bottom: 30px;
+    color:#fc328a;
+    position: relative;
+}
+.tv-instructor-icon {
+    background: #000 none repeat scroll 0 0;
+    border: medium none;
+    display: inline-block;
+    float: none;
+    font-size: 25px;
+    height: 55px;
+    margin-top: 16px;
+    padding: 8px 0;
+    position: relative;
+    text-align: center;
+    transform: rotate(45deg);
+    transition: all 0.45s ease-in-out 0s;
+    width: 55px;
+}
+.tv-instructor-icon i {
+    color: #fff;
+    display: inline-block;
+    font-size: 20px;
+    transform: rotate(-45deg);
+}
+.tv-instructor-content h4 {
+    font-size: 19px;
+    font-weight: 700;
+    letter-spacing: 1px;
+    margin-bottom: 10px;
+    text-transform: capitalize;
+}
+.tv-gyminstructor-block {
+    display: inline-block;
+    margin-top: 40px;
+}
+.tv-instructor-icon:hover
+{
+    background-color: #fc328a;
+}
+.tv-instructor-content > p {
+    letter-spacing: 1px;
+}
+.tv-fixed-img {
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-size: cover;
+    overflow: hidden;
+    position: relative;
+}
+/*End Gym Instrcutor CSS*/
+
+/*Workout CSS*/
+.tv-bg-black
+{
+    background: #000000;
+}
+.tv-bg-pink
+{
+    background: #fc328a;
+}
+.tv-opacity-medium
+{
+    width: 100%;
+    height: 100%;
+    top:0;
+    left:0;
+    position: absolute;
+    opacity: 0.7;
+}
+.tv-banner-section-title > p{
+    color: #ffffff;
+    font-weight: 600;
+    letter-spacing: 1px;
+    position: relative;
+}
+.tv-section-title > p
+{
+    color: #222222;
+    font-weight: 600;
+    letter-spacing: 1px;
+    position: relative;
+}
+.tv-banner-section-title > h3 {
+    color: #fc328a;
+    font-family: "Concert One",cursive;
+    font-size: 30px;
+    letter-spacing: 1px;
+    margin-bottom: 30px;
+    position: relative;
+    text-transform: uppercase;
+}
+.tv-banner-section-title , .tv-section1{
+    margin: 0 auto 30px;
+    width: 50%;
+}
+.tv-workout-img {
+    display: inline-block;
+    position: relative;
+    transform: scale(1);
+    transition: all 0.5s ease 0s;
+    width: 100%;
+}
+.tv-workout-img:hover::before , .tv-workout-img:hover h3{
+    opacity: 1;
+}
+.tv-workout-img::before {
+    background: rgba(252, 50, 138, 0.6) none repeat scroll 0 0;
+    content: "";
+    height: 100%;
+    left: 0;
+    opacity: 0;
+    position: absolute;
+    top: 0;
+    transition: all 0.5s ease 0s;
+    width: 100%;
+}
+.tv-workout-img h3 {
+    color: #ffffff;
+    font-size: 20px;
+    font-weight: 600;
+    letter-spacing: 1px;
+    opacity: 0;
+    position: absolute;
+    text-align: center;
+    text-transform: capitalize;
+    top: 50%;
+    transition: all 0.5s ease 0s;
+    width: 100%;
+    left:50%;
+    transform: translate(-50%,-50%);
+}
+#workout.owl-theme .owl-dots .owl-dot.active span, .owl-theme .owl-dots .owl-dot:hover span , #trainer.owl-theme .owl-dots .owl-dot.active span, .owl-theme .owl-dots .owl-dot:hover span , #testinominal.owl-theme .owl-dots .owl-dot.active span, .owl-theme .owl-dots .owl-dot:hover span , #instagram.owl-theme .owl-dots .owl-dot.active span, .owl-theme .owl-dots .owl-dot:hover span {
+    background: #fc328a none repeat scroll 0 0;
+}
+/*End Workout CSS*/
+
+/*Membership CSS*/
+.tv-membership-details > h4 {
+    color: #fc328a;
+    font-size: 19px;
+    font-weight: 700;
+    letter-spacing: 1px;
+    text-transform: capitalize;
+}
+.tv-membership-details > h3 {
+    font-family: "Concert One",cursive;
+    font-size: 35px;
+    margin-bottom: 30px;
+}
+.tv-membership-details > p {
+    font-weight: 600;
+    letter-spacing: 1px;
+    margin-bottom: 20px;
+}
+.tv-bodiez-button > a {
+    border: 1px solid #000000;
+    display: inline-block;
+    font-weight: 700;
+    letter-spacing: 1px;
+    padding: 7px 20px;
+    text-transform: capitalize;
+    color:#000000;
+}
+.tv-bodiez-button
+{
+    margin-top: 30px;
+    display: inline-block;
+}
+.tv-bodiez-button > a:hover
+{
+    color: #fc328a;
+    border:1px solid #fc328a;
+}
+/*End Membership CSS*/
+
+/*Price CSS*/
+.price-box {
+    background-color: #f7f7f7;
+    border-radius: 10px;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
+    margin-top:100px;
+    padding-bottom: 15px;
+    position: relative;
+    transition: all 0.5s ease 0s;
+    text-align: center;
+}
+.price-box .price-empty {
+    border-radius: 10px;
+    padding: 60px 0;
+    position: relative;
+}
+.price-box .price-quantity {
+    padding: 35px 0;
+    position: relative;
+}
+.price-box .price-quantity .qnty-box {
+    background-color: #f7f7f7;
+    border: 4px solid #ffffff;
+    border-radius: 50%;
+    bottom: 0;
+    height: 200px;
+    left: 0;
+    line-height: 235px;
+    margin: 0 auto;
+    position: absolute;
+    right: 0;
+    top: 0;
+    transform: translateY(-200px);
+    transition: all 0.5s ease 0s;
+    width: 200px;
+}
+.price-box .price-quantity .qnty-box .box-element {
+    display: inline-block;
+}
+.price-box .price-quantity .qnty-box .box-element h5 {
+    color: #fc328a;
+    font-size:30px;
+    font-weight: 700;
+    margin-bottom: 10px;
+}
+.price-box .price-quantity .qnty-box .box-element p {
+    color: #000000;
+    font-size: 15px;
+    font-weight: 700;
+    letter-spacing: 1px;
+    line-height: 15px;
+    text-transform: capitalize;
+}
+.price-box .price-quantity .price-dtl ul {
+    margin: 0 50px;
+}
+.price-box .price-quantity .price-dtl ul li {
+    color: #747474;
+    font-size: 16px;
+    padding: 12px 0;
+}
+.price-box .price-quantity .price-dtl ul li {
+    border-top: 1px solid #cccccc;
+    color: #222222;
+    font-size: 15px;
+    font-weight: 600;
+    letter-spacing: 1px;
+    padding: 12px 0;
+    text-transform: capitalize;
+}
+.price-box.active , .price-box:hover {
+    background-color: #fc328a;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.19), 0 6px 6px rgba(0, 0, 0, 0.23);
+}
+.price-box.active .qnty-box , .price-box:hover .qnty-box {
+    background-color: #fc328a;
+}
+.price-box:hover .price-quantity .qnty-box .box-element h5 , .price-box.active .price-quantity .qnty-box .box-element h5{
+    color: #ffffff;
+}
+.price-box:hover .price-quantity .qnty-box .box-element p , .price-box.active .price-quantity .qnty-box .box-element p
+{
+    color: #ffffff;
+}
+.price-box:hover .price-quantity .price-dtl ul li , .price-box.active .price-quantity .price-dtl ul li {
+    color: #ffffff;
+}
+.price-box:hover .tv-bodiez-button > a , .price-box.active .tv-bodiez-button > a{
+    border: 1px solid #ffffff;
+    color: #ffffff;
+}
+/*End Price CSS*/
+
+/*Trainer CSS*/
+.tv-trainer-bg
+{
+    background-color: #202020;
+}
+.team {
+    float: left;
+    position: relative;
+    transition: all 0.45s ease-in-out 0s;
+    width: 100%;
+}
+.team-img {
+    float: left;
+    overflow: hidden;
+    position: relative;
+    width: 100%;
+    z-index: 1;
+}
+figure.team-img::before {
+    bottom: 0;
+    content: "";
+    left: 0;
+    opacity: 0;
+    position: absolute;
+    right: 0;
+    top: 0;
+    transition: all 0.45s ease-in-out 0s;
+    z-index: 1;
+}
+.team-icon {
+    left: -13%;
+    margin-left: 0;
+    opacity: 0;
+    position: absolute;
+    text-align: left;
+    top: 50%;
+    transition: all 0.45s ease-in-out 0s;
+    width: 100%;
+    transform: translateY(-50%);
+    z-index: 1;
+}
+figcaption.team-icon ul {
+    margin: 0 0;
+}
+figcaption.team-icon ul li:last-child > a
+{
+    margin-bottom: 0;
+}
+.team-circle {
+    background: #202020 none repeat scroll 0 0;
+    border-radius: 0;
+    color: #ffffff;
+    display: inline-block;
+    float: none;
+    font-size: 16px;
+    height: 35px;
+    margin-bottom: 10px;
+    margin-left: 10px;
+    padding: 7px 0;
+    text-align: center;
+    transition: all 0.45s ease-in-out 0s;
+    width: 35px;
+}
+.trainer {
+    background-color: #ffffff;
+    float: left;
+    padding: 20px 0;
+    text-align: center;
+    width: 100%;
+}
+.team:hover figure.team-img::before {
+    opacity: 0.8;
+    background-color: #fc328a;
+}
+.team:hover .team-icon {
+    left: 0;
+    opacity: 1;
+}
+.trainer a {
+    font-size: 16px;
+    font-weight: 700;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+}
+.trainer a:hover
+{
+    color:#fc328a;
+}
+.trainer > h5 {
+    letter-spacing: 1px;
+    margin-top: 10px;
+}
+.team-circle:hover , .team-circle:focus , .team-circle:active{
+    color: #ffffff;
+}
+/*End Trainer CSS*/
+
+/*Gallery CSS*/
+.tv-gallery-clear div:nth-child(3n+1)
+{
+    clear:both;
+}
+.tv-gallery-img i
+{
+    color: #ffffff;
+    cursor: pointer;
+    font-size: 30px;
+    font-weight: 700;
+    left: 45%;
+    opacity: 0;
+    position: absolute;
+    top: 45%;
+    transition: all 0.5s ease 0s;
+}
+.tv-gallery-img::before {
+    background: #fc328a none repeat scroll 0 0;
+    content: "";
+    height: 100%;
+    left: 0;
+    opacity: 0;
+    position: absolute;
+    top: 0;
+    transition: all 0.5s ease 0s;
+    width: 100%;
+}
+.tv-gallery-img:hover::before {
+    opacity: 0.5;
+}
+.tv-gallery-img:hover i {
+    opacity: 1;
+}
+.tv-gallery-img
+{
+    position: relative;
+}
+/*End Gallery CSS*/
+
+/*Testinominal CSS*/
+.tv-testinominal-block h3 {
+    color: #fc328a;
+    font-size: 17px;
+    font-weight: 700;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+}
+.tv-testinominal-block h4 {
+    color: #ffffff;
+    font-size: 15px;
+    font-weight: 600;
+    letter-spacing: 1px;
+    margin: 10px 0;
+}
+.tv-testinominal-block p {
+    color: #ffffff;
+    font-weight: 600;
+    letter-spacing: 1px;
+    line-height: 25px;
+}
+.tv-testinominal-block i {
+    color: #fc328a;
+    font-size: 15px;
+}
+/*End Testinominal CSS*/
+
+/*Latest News CSS*/
+.tv-latestnews-block {
+    border: 1px solid #ececec;
+    display: inline-block;
+    margin-top: 20px;
+    transition: all 0.5s ease 0s;
+}
+.tv-latestnews-img
+{
+    position: relative;   
+}
+.date {
+    font-size: 20px;
+    margin-top: 5px;
+}
+.tv-latestnews-date span {
+    color: #fc328a;
+    display: block;
+    font-weight: 700;
+    letter-spacing: 1px;
+    text-align: center;
+}
+.tv-latestnews-date {
+    background: #ffffff none repeat scroll 0 0;
+    display: block;
+    height: 60px;
+    left: 6%;
+    position: absolute;
+    text-transform: uppercase;
+    top:75%;
+    width: 54px;
+}
+.tv-latestnews-content
+{
+    display: inline-block;
+    padding: 29px 20px;
+}
+.meta {
+    font-size: 14px;
+    font-weight: 600;
+    letter-spacing: 1px;
+    margin: 10px 0;
+    text-transform: capitalize;
+}
+.latestnews-content > p {
+    letter-spacing: 1px;
+}
+.news-author {
+    display: inline;
+}
+.comment-counter {
+    display: inline;
+}
+.latestnews-title h4 {
+    font-size: 15px;
+    font-weight: 800;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+}
+.tv-latestnews-block:hover
+{
+    box-shadow: 2px 4px 43px -8px #000000;
+}
+.tv-latestnews-block:hover .latestnews-title h4 {
+    color: #fc328a;
+}
+.tv-latestnews-block:hover .tv-bodiez-button > a
+{
+    border-color: #fc328a;
+    color:#fc328a;
+}
+.tv-latestnews-clear div:nth-child(3n+1)
+{
+    clear:both;
+}
+/*End Latest News CSS*/
+
+/*Instagram CSS*/
+.tv-instagram-img::before {
+    background: #fc328a none repeat scroll 0 0;
+    content: "";
+    height: 100%;
+    left: 0;
+    opacity: 0;
+    position: absolute;
+    top: 0;
+    transition: all 0.5s ease 0s;
+    width: 100%;
+}
+.tv-instagram-img:hover::before {
+    opacity: 0.5;
+}
+.tv-instagram-img:hover i {
+    opacity: 1;
+}
+.tv-instagram-img{
+    position: relative;
+}
+.tv-instagram-img i
+{
+    color: #ffffff;
+    cursor: pointer;
+    font-size:20px;
+    font-weight: 700;
+    left: 45%;
+    opacity: 0;
+    position: absolute;
+    top: 45%;
+    transition: all 0.5s ease 0s;
+}
+/*End Instagram CSS*/
+
+/*Footer CSS*/
+.backlink-top {
+    border-top: 3px solid #eeeeee;
+}
+.tv-footer-menu {
+    padding: 20px 0;
+}
+.tv-footer-menu a {
+    color: #707070;
+    font-size: 13px;
+    font-weight: 700;
+    letter-spacing: 1px;
+}
+.tv-footer-menu a:hover
+{
+    color:#fc328a;
+}
+.tv-footer-menu li {
+    display: inline-block;
+    margin-right: 10px;
+}
+.tv-copyright {
+    float: right;
+    padding: 20px 0;
+}
+.tv-copyright > p {
+    color: #707070;
+    font-size: 13px;
+    font-weight: 700;
+    letter-spacing: 1px;
+    text-transform: capitalize;
+}
+.tv-copyright a {
+    color: #222222;
+    font-weight: 700;
+}
+.tv-copyright a:hover
+{
+    color:#fc328a;
+}
+/*End Footer CSS*/
+
+/*Back To Top CSS*/
+#back-to-top
+{
+    bottom: 50px;
+    color: #ffffff;
+    cursor: pointer;
+    font-size: 16px;
+    height: 40px;
+    position: fixed;
+    right: 30px;
+    text-align: center;
+    width: 40px;
+    z-index: 992;
+}
+#back-to-top > img {
+    width: 40px;
+}
+/*End Back To Top CSS*/
+
+/*About Us*/ 
+.tv-inner-banner-text
+{
+    left: 50%;
+    position: absolute;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    color:#ffffff;
+    text-align: center;
+    width: 100%;
+}
+.tv-inner-banner-text h3 {
+    font-family: "Concert One",cursive;
+    font-size: 50px;
+    letter-spacing: 1px;
+}
+.tv-breadcrumb {
+    margin-top: 20px;
+}
+.tv-breadcrumb span {
+    font-size: 15px;
+    font-weight: 600;
+    letter-spacing: 1px;
+}
+.tv-breadcrumb a
+{
+    color:#000000;
+}
+.tv-section-title h4 {
+    font-size: 15px;
+    font-weight: 600;
+    letter-spacing: 1px;
+    margin-bottom: 30px;
+    text-transform: capitalize;
+}
+.tv-aboutus-desc > p {
+    letter-spacing: 1px;
+    margin-bottom: 20px;
+}
+.tv-aboutus-benefit > a {
+    color: #fc328a;
+    display: inline-block;
+    font-size: 13px;
+    font-weight: 700;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+}
+.tv-aboutus-benefit span {
+    font-size: 17px;
+    margin-right: 10px;
+    vertical-align: top;
+}
+.tv-aboutus-benefit > p {
+    letter-spacing: 1px;
+    margin-top: 10px;
+}
+.tv-aboutus-benefit {
+    padding: 10px;
+}
+.tv-aboutus-opening
+{
+    box-shadow: 0 5px 30px -8px #000000;
+    padding: 43px 40px;
+}
+.tv-opening-hours > h3 {
+    color: #fc328a;
+    font-size: 17px;
+    font-weight: 700;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+}
+.tv-aboutus-opening .tv-opening-hours ul li {
+    border-bottom: 1px solid #a6a6a6;
+    color: #6b6b6b;
+    font-size: 14px;
+    font-weight: 600;
+    letter-spacing: 1px;
+    padding: 10px 0;
+    text-transform: capitalize;
+}
+.tv-aboutus-opening .tv-opening-hours ul li span {
+    float: right;
+}
+.tv-aboutus-opening .tv-opening-hours ul {
+    display: inline-block;
+    margin-top: 20px;
+    width: 100%;
+}
+.tv-aboutus-opening .tv-opening-img {
+    margin-top: 40px;
+    position: relative;
+    width: 100%;
+}
+.tv-opening-img::before {
+    background: rgba(252, 50, 138, 0.6) none repeat scroll 0 0;
+    content: "";
+    height: 100%;
+    left: 0;
+    opacity: 1;
+    position: absolute;
+    top: 0;
+    transition: all 0.5s ease 0s;
+    width: 100%;
+}
+.tv-opening-img {
+    display: inline-block;
+    position: relative;
+    transform: scale(1);
+    transition: all 0.5s ease 0s;
+    width: 100%;
+}
+.tv-opening-img-name {
+    left: 50%;
+    position: absolute;
+    text-align: center;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    width: 100%;
+}
+.tv-opening-img-name > p {
+    color: #ffffff;
+    font-weight: 700;
+    letter-spacing: 1px;
+    margin-top: 10px;
+}
+.tv-opening-img-name h5 {
+    color: #ffffff;
+    font-size: 17px;
+    font-weight: 700;
+    letter-spacing: 1px;
+    text-transform: capitalize;
+}
+.tv-welcome-counter p {
+    color: #ffffff;
+    font-size: 30px;
+    font-weight: 700;
+    letter-spacing: 5px;
+}
+.tv-welcome-counter > h5 {
+    color: #ffffff;
+    font-size: 15px;
+    font-weight: 700;
+    letter-spacing: 5px;
+    text-transform: uppercase;
+}
+.tv-welcome-counter
+{
+    text-align: center;
+}
+/*End About Us*/
+
+/*404 CSS*/
+.tv-404-block img {
+    width: 400px;
+    margin:0 auto;
+}
+.tv-404-block
+{
+    text-align: center;
+}
+.tv-404-block h1 {
+    font-size: 25px;
+    font-weight: 700;
+    letter-spacing: 10px;
+    margin-bottom: 50px;
+    text-transform: uppercase;
+}
+.tv-404-desc h4 {
+    font-size: 19px;
+    font-weight: 700;
+    letter-spacing: 1px;
+    margin-bottom: 20px;
+    text-transform: capitalize;
+}
+.tv-404-desc
+{
+    margin-top: 30px;
+}
+.tv-404-desc > p {
+    font-weight: 600;
+    letter-spacing: 1px;
+    line-height: 20px;
+}
+.tv-404-desc a {
+    color: #fc328a;
+    font-weight: 700;
+    text-transform: capitalize;
+}
+.tv-404-desc i {
+    font-size: 15px;
+    font-weight: 600;
+    margin-left: 5px;
+}
+/*End 404 CSS*/
+
+/*Comming Soon CSS*/
+.comming-content-area {
+    z-index: 2;
+    height: 100%;
+}
+.comming-content {
+    left: 10%;
+    position: absolute;
+    top: 30%;
+    transform: translateY(-30%);
+    width: 41%;
+}
+.comming-content h2 {
+    color: #ffffff;
+    font-family: "Concert One",cursive;
+    font-size: 80px;
+    margin-bottom: 10px;
+    text-transform: uppercase;
+}
+.comming-content p {
+    color: #ffffff;
+    font-weight: 600;
+    letter-spacing: 1px;
+    margin-left: 5px;
+    margin-top: 30px;
+}
+.tv-comming-button > a {
+    border: 1px solid #ffffff;
+    display: inline-block;
+    font-weight: 700;
+    letter-spacing: 1px;
+    padding: 7px 20px;
+    text-transform: capitalize;
+    color:#ffffff;
+    margin-left: 5px;
+}
+.tv-comming-button
+{
+    margin-top: 30px;
+    display: inline-block;
+}
+.tv-comming-button > a:hover
+{
+    color: #fc328a;
+    background-color: #ffffff;
+    border:1px solid #ffffff;
+}
+.tv-comming-soon {
+    background-color: rgba(0, 0, 0, 0);
+    background-repeat: no-repeat;
+    bottom: 0;
+    height: 100%;
+    left: 0;
+    position: absolute;
+    background-size: cover;
+    right: 0;
+    top: 0;
+    z-index: -1;
+}
+.overlay {
+    min-height: 0;
+}
+.overlay {
+    background-color: #fc328a;
+    height: 100%;
+    opacity: 0.75;
+    position: absolute;
+    width: 100%;
+    z-index: -1;
+}
+/*End Comming Soon CSS*/
+
+/*Inner Service CSS*/
+.tv-inner-services-icon {
+    display: inline-block;
+    float: left;
+    margin-bottom: 20px;
+}
+.tv-inner-services-content h4 {
+    color: #000000;
+    display: inline-block;
+    font-size: 17px;
+    font-weight: 700;
+    letter-spacing: 1px;
+    margin-left: 30px;
+    text-transform: uppercase;
+    transition: all 0.5s ease 0s;
+}
+.tv-inner-services-icon > img {
+    width: 50px;
+}
+.tv-inner-services-content > p {
+    display: inline-block;
+    font-weight: 600;
+    letter-spacing: 1px;
+}
+.tv-inner-services-content {
+    margin-bottom: 20px;
+}
+.tv-inner-services-content h4:hover {
+    color: #fc328a;
+}
+.tv-inner-services-clear div:nth-child(3n+1)
+{
+    clear:both;
+}
+.tv-bmi-block {
+    display: inline-block;
+    margin-left: 70px;
+    width: 80%;
+    margin-top:20px;
+}
+.tv-bmi-block div:nth-child(2n+1)
+{
+    clear:both;
+}
+.tv-bmi-content input {
+    background: rgba(0, 0, 0, 0) none repeat scroll 0 0;
+    border-radius: 0;
+    color: #ffffff;
+    font-weight: 600;
+    letter-spacing: 1px;
+}
+.tv-bmi-content
+{
+    margin-top: 20px;
+}
+.tv-bmi-content .form-control::placeholder {
+    color: #000000;
+    opacity: 1;
+}
+.tv-bmi-content label {
+    color: #ffffff;
+    letter-spacing: 1px;
+    margin-bottom: 15px;
+}
+.tv-bmi-button button
+{
+    border: 1px solid #ffffff;
+    display: inline-block;
+    font-weight: 700;
+    letter-spacing: 1px;
+    padding: 7px 20px;
+    text-transform: capitalize;
+    background: transparent;
+    color:#ffffff;
+    margin-top:54px;
+}
+/*End Inner Service CSS*/
+
+/*Goal CSS*/
+.tv-goal-block img {
+    border: 3px solid #fc328a;
+}
+.tv-goal-desc {
+    margin-top: 20px;
+    text-align: center;
+}
+.tv-goal-desc > p {
+    letter-spacing: 1px;
+    margin-top: 10px;
+}
+.tv-goal-desc > h4 {
+    font-size: 17px;
+    font-weight: 700;
+    letter-spacing: 1px;
+    text-transform: capitalize;
+}
+/*End Goal CSS*/
+
+
+/*Trainer CSS*/
+.tv-trainer-border {
+    border: 1px solid #fc328a;
+}
+.tv-trainer-clear div:nth-child(3n+1)
+{
+    clear:both;   
+}
+.tv-inner-trainer-name {
+    background: #fc328a none repeat scroll 0 0;
+    display: inline-block;
+    padding: 20px 40px;
+    width: 100%;
+}
+.tv-inner-trainer-name h4 {
+    color: #ffffff;
+    font-weight: 700;
+    letter-spacing: 1px;
+    margin-bottom: 20px;
+    text-transform: uppercase;
+}
+.tv-inner-trainer-details
+{
+    margin-bottom: 10px;
+}
+.tv-inner-trainer-details > span {
+    color: #ffffff;
+    font-weight: 600;
+    letter-spacing: 1px;
+    text-transform:capitalize;
+}
+.tv-inner-trainer-details > p {
+    color: #ffffff;
+    display: inline-block;
+    float: right;
+    font-weight: 600;
+    letter-spacing: 1px;
+}
+/*End Trainer CSS*/
+
+/*Contact Us CSS*/
+.ctc-box {
+    border: 1px solid #ced4da;
+    border-radius: 8px;
+    display: inline-block;
+    margin-bottom: 20px;
+    padding: 38px 30px;
+    transition: all 0.5s ease 0s;
+    width: 100%;
+}
+.ctc-content {
+    float: left;
+    width: 100%;
+}
+.ctc-content i {
+    color: #fc328a;
+    float: left;
+    font-size:20px;
+    width: 15%;
+}
+.ctc-content p {
+    color: #000000;
+    float: left;
+    font-size: 13px;
+    font-weight: 600;
+    letter-spacing: 1px;
+    margin-bottom: 20px;
+    word-spacing: 1px;
+}
+.ctc-box:hover {
+    box-shadow: 2px 12px 39px -15px #000000;
+}
+.ctc-box-img {
+    background-image: url("../images/Image50.png");
+    height: 100%;
+    position: relative;
+    width: 100%;
+}
+.ctc-box-img::before {
+    background-color: rgba(252, 50, 138, 0.8);
+    border-radius: 8px;
+    content: "";
+    height: 100%;
+    left: 0;
+    position: absolute;
+    top: 0;
+    width: 100%;
+    z-index: 1;
+}
+.ctc-box ul {
+    padding: 16px 5px;
+    position: relative;
+    z-index: 9;
+}
+.ctc-box.ctc-box-img p {
+    color: #ffffff;
+    font-weight: 600;
+    letter-spacing: 1px;
+    margin-bottom: 9.5px;
+    word-spacing: 5px;
+}
+.ctc-box .ctc-link ul li a i {
+    color: #6b6b6b;
+    font-size: 30px;
+    transition: all 0.5s ease 0s;
+}
+.ctc-box .ctc-link ul li {
+    display: inline-block;
+    margin-right: 20px;
+}
+.ctc-link > p {
+    font-weight: 600;
+    letter-spacing: 1px;
+    margin-bottom: 14.5px;
+}
+.ctc-box .ctc-link ul li a i:hover {
+    color: #fc328a;
+}
+/*End Contact Us CSS*/
+
+/*Message CSS*/
+.tv-message-bg
+{
+    background: #f7f7f7 none repeat scroll 0 0;
+}
+.reservation-form input {
+    background: rgba(0, 0, 0, 0) none repeat scroll 0 0;
+    border: 1px solid #888888;
+    border-radius: 0;
+    font-weight: 600;
+    height: 44px;
+    letter-spacing: 1px;
+    padding: 10px 15px;
+    width: 100%;
+}
+.reservation-form textarea {
+    border: 1px solid #888888;
+    border-radius: 0;
+    font-size: 14px;
+    font-weight: 600;
+    height: 165px;
+    letter-spacing: 1px;
+    line-height: 16px;
+    padding: 15px 20px;
+    resize: none;
+    text-transform: capitalize;
+    width: 100%;
+}
+.tv-contact-button button
+{
+    border: 1px solid #000000;
+    display: inline-block;
+    font-weight: 700;
+    letter-spacing: 1px;
+    padding: 7px 20px;
+    text-transform: capitalize;
+    background: transparent;
+    color:#000000;
+}
+.tv-contact-button button:hover
+{
+    border: 1px solid #fc328a;
+    color:#fc328a;
+}
+.tv-bmi-content .form-control:focus {
+    border-color: #cccccc;
+    box-shadow:unset;
+    outline: 0 none;
+}
+.reservation-form .form-control:focus
+{
+    border-color: #888888;
+    box-shadow:unset;
+    outline: 0 none;
+}
+#map
+{
+    height: 300px;
+}
+.tv-contact-clear div:nth-child(3n+1)
+{
+    clear:both;
+}
+/*End Message CSS*/
+

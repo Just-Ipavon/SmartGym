@@ -1,0 +1,42 @@
+{% extends "template.html" %}
+
+{% block content %}
+<div class="tv-inner-banner-image" style="background-image: url('/static/images/Image7.jpg')">
+    <div class="tv-opacity-medium tv-bg-pink"></div>
+    <div class="tv-inner-banner-text">
+        <h3>Sign In</h3>
+        <div class="tv-breadcrumb">
+            <a href="{{url_for('home')}}"><span>Home</span></a>&nbsp;&nbsp;&nbsp;/&nbsp;&nbsp;&nbsp;<span>Sign In</span>
+        </div>
+    </div>
+</div>
+    <form name="login_form">
+    <div class="page-wrapper bg-color p-t-130 p-b-100 font-poppins">
+        <div class="wrapper wrapper--w680">
+            <div class="card card-4">
+                <div class="card-body">
+                    <h2 class="title">Sign In</h2>
+                    <form method="POST">
+                        <div class="row row-space">
+                            <div class="col-2">
+                                <div class="input-group">
+                                    <label class="label">Email</label>
+                                    <input class="input--style-4" type="email" name="email">
+                                </div>
+								<div class="input-group">
+									<label class="label">Password</label>
+									<input class="input--style-4" input type="password" id="password" name="password" required>
+								</div>
+                            </div>
+                        </div>
+                            <button class="btn btn--radius-2 btn--main" type="submit">Submit</button>	
+						</div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+    </form>
+
+
+{% endblock %}

@@ -1,0 +1,122 @@
+{% extends "template.html" %}
+
+{% block content %}
+
+<div class="tv-inner-banner-image" style="background-image: url('/static/images/Image3.jpg')">
+  <div class="tv-opacity-medium tv-bg-pink"></div>
+  <div class="tv-inner-banner-text">
+      <h3>Workout Form</h3>
+      <div class="tv-breadcrumb">
+          <a href="{{url_for('home')}}"><span>Home</span></a>&nbsp;&nbsp;&nbsp;/&nbsp;&nbsp;&nbsp;<span>Workout Form</span>
+      </div>
+  </div>
+</div>
+  <div class="page-wrapper bg-color p-t-130 p-b-100 font-poppins">
+    <div class="wrapper wrapper--w680">
+      <div class="card card-4">
+        <div class="card-body">
+          <div class="title">
+            <hr/>
+            <h2 class="formHeader">Answer the following questions for your personalized workout</h2>
+            <hr/>
+          </div>
+        <div class="formInfo">
+          <form id="workoutForm" method="POST">
+            <div class="col-2">
+              <div class="input-group">
+                <label class="label">Fitness Level:</label>
+                <div class="p-t-10">
+                  <label class="radio-container m-r-45">Beginner
+                      <input type="radio" checked="checked" name="level" value="Beginner" required>
+                      <span class="checkmark"></span>
+                  </label>
+                  <label class="radio-container">Intermediate
+                      <input type="radio" name="level" value="Intermediate" required>
+                      <span class="checkmark"></span>
+                  </label>
+                  <label class="radio-container">Expert
+                    <input type="radio" name="level" value="Expert" required>
+                    <span class="checkmark"></span>
+                </label>
+              </div>
+              </div>
+            </div>
+            <div class="col-2">
+              <div class="input-group">
+                <label class="label">Length of Workout:</label>
+                <div class="p-t-10">
+                  <label class="radio-container m-r-45">10 min
+                      <input type="radio" checked="checked" name="length" value="10min" required>
+                      <span class="checkmark"></span>
+                  </label>
+                  <label class="radio-container">20 min
+                      <input type="radio" name="length" value="20min" required>
+                      <span class="checkmark"></span>
+                  </label>
+                  <label class="radio-container">30 min
+                    <input type="radio" name="length" value="30min" required>
+                    <span class="checkmark"></span>
+                </label>
+                <label class="radio-container">40 min
+                  <input type="radio" name="length" value="40min" required>
+                  <span class="checkmark"></span>
+              </label>
+              </div>
+              </div>
+            </div>
+            <div class="col-2">
+              <div class="input-group">
+                <label class="label">Type of Workout:</label>
+                <div class="p-t-10">
+                  <label class="radio-container m-r-45">Total Body
+                      <input type="radio" checked="checked" name="type" value="Total" required>
+                      <span class="checkmark"></span>
+                  </label>
+                  <label class="radio-container">Upper Body
+                      <input type="radio" name="type" value="Upper" required>
+                      <span class="checkmark"></span>
+                  </label>
+                  <label class="radio-container">Lower Body
+                    <input type="radio" name="type" value="Lower" required>
+                    <span class="checkmark"></span>
+                </label>
+              </div>
+              </div>
+            </div>
+            <div class="col-2">
+              <div class="input-group">
+                <label class="label">Workout Goals:</label>
+                <div class="p-t-10">
+                  <label class="box-container m-r-45">Basic Fitness
+                      <input type="checkbox" name="goal" value="basicFitness" >
+                      <span class="checkmark2"></span>
+                  </label>
+                  <label class="box-container">Weight Loss
+                      <input type="checkbox" name="goal" value="weightLoss" >
+                      <span class="checkmark2"></span>
+                  </label>
+                  <label class="box-container">Muscle Gain
+                    <input type="checkbox" name="goal" value="muscleGain" >
+                    <span class="checkmark2"></span>
+                </label>
+                <label class="box-container">Cardio
+                  <input type="checkbox" name="goal" value="cardio" >
+                  <span class="checkmark2"></span>
+              </label>
+              <label class="box-container">Muscle Endurance
+                <input type="checkbox" name="goal" value="muscleEndurance" >
+                <span class="checkmark2"></span>
+            </label>
+              </div>
+              </div>
+            </div>
+          <input class="btn btn--radius-2 btn--main" id="clickMe" type="submit" name="submit_form" value="Get Started!" >
+          </form>
+        </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  
+
+  {% endblock %}

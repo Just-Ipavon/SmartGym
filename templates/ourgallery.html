@@ -1,0 +1,113 @@
+{% extends "template.html" %}
+
+{% block content %}
+
+        <div class="tv-inner-banner-image" style="background-image: url('/static/images/Image7.jpg')">
+            <div class="tv-opacity-medium tv-bg-pink"></div>
+            <div class="tv-inner-banner-text">
+                <h3>Our Gallery</h3>
+                <div class="tv-breadcrumb">
+                    <a href="{{url_for('home')}}"><span>Home</span></a>&nbsp;&nbsp;&nbsp;/&nbsp;&nbsp;&nbsp;<span>Our Gallery</span>
+                </div>
+            </div>
+        </div>
+        <!--End Header Section-->
+
+        <!--Gallery Section-->
+        <section class="tv-section-padding">
+            <div class="container">
+                <div class="row">
+                    <div class="tv-gallery-clear">
+                        <div class="col-md-4 col-sm-6 col-xs-12">
+                            <a href="/static/images/Image25.jpg" data-gallery-image-popup="">
+                                <div class="tv-gallery-img tv-offspace-bottom-30">
+                                    <img src="/static/images/Image25.jpg" class="width-100 img-responsive" alt="galleryimg" />
+                                    <i class="icon_search"></i>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="col-md-4 col-sm-6 col-xs-12">
+                            <a href="/static/images/Image26.jpg" data-gallery-image-popup="">
+                                <div class="tv-gallery-img tv-offspace-bottom-30">
+                                    <img src="/static/images/Image26.jpg" class="width-100 img-responsive" alt="galleryimg" />
+                                    <i class="icon_search"></i>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="col-md-4 col-sm-6 col-xs-12">
+                            <a href="/static/images/Image27.jpg" data-gallery-image-popup="">
+                                <div class="tv-gallery-img tv-offspace-bottom-30">
+                                    <img src="/static/images/Image27.jpg" class="width-100 img-responsive" alt="galleryimg" />
+                                    <i class="icon_search"></i>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="col-md-4 col-sm-6 col-xs-12">
+                            <a href="/static/images/Image28.jpg" data-gallery-image-popup="">
+                                <div class="tv-gallery-img tv-offspace-bottom-30">
+                                    <img src="/static/images/Image28.jpg" class="width-100 img-responsive" alt="galleryimg" />
+                                    <i class="icon_search"></i>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="col-md-4 col-sm-6 col-xs-12">
+                            <a href="/static/images/Image29.jpg" data-gallery-image-popup="">
+                                <div class="tv-gallery-img tv-offspace-bottom-30">
+                                    <img src="/static/images/Image29.jpg" class="width-100 img-responsive" alt="galleryimg" />
+                                    <i class="icon_search"></i>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="col-md-4 col-sm-6 col-xs-12">
+                            <a href="/static/images/Image30.jpg" data-gallery-image-popup="">
+                                <div class="tv-gallery-img tv-offspace-bottom-30">
+                                    <img src="/static/images/Image30.jpg" class="width-100 img-responsive" alt="galleryimg" />
+                                    <i class="icon_search"></i>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="col-md-4 col-sm-6 col-xs-12">
+                            <a href="/static/images/Image6.jpg" data-gallery-image-popup="">
+                                <div class="tv-gallery-img tv-offspace-bottom-30">
+                                    <img src="/static/images/Image6.jpg" class="width-100 img-responsive" alt="galleryimg" />
+                                    <i class="icon_search"></i>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="col-md-4 col-sm-6 col-xs-12">
+                            <a href="/static/images/Image8.jpg" data-gallery-image-popup="">
+                                <div class="tv-gallery-img tv-offspace-bottom-30">
+                                    <img src="/static/images/Image8.jpg" class="width-100 img-responsive" alt="galleryimg" />
+                                    <i class="icon_search"></i>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="col-md-4 col-sm-6 col-xs-12">
+                            <a href="/static/images/Image13.jpg" data-gallery-image-popup="">
+                                <div class="tv-gallery-img">
+                                    <img src="/static/images/Image13.jpg" class="width-100 img-responsive" alt="galleryimg" />
+                                    <i class="icon_search"></i>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!--End Gallery Section-->
+        
+        <!--Script Gallery-->
+        <script>
+            $(document).ready(function () {
+                var $imagePopup = $('[data-gallery-image-popup]');
+                /*Image*/
+                $imagePopup.magnificPopup({
+                    type: 'image',
+                    gallery: {
+                        enabled: true
+                    }
+                });
+            });
+        </script>
+        <!--End Script Gallery-->
+        {% endblock %}

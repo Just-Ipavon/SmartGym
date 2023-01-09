@@ -1,0 +1,25 @@
+
+    <header>
+        <a href="{{url_for('home')}}" class="logo"><i class='bx bx-dumbbell'></i></i><span>Smart Gym</span></a>
+    
+        <ul class="navbar">
+            <li><a href="{{url_for('home')}}">Home</a></li>
+            <li><a href="{{url_for('AboutUs')}}">About Us</a></li>
+            <li><a href="{{url_for('Contact')}}">Contact Us</a></li>
+            <li><a href="{{url_for('Gallery')}}">Gallery</a></li>
+            <li><a href="{{url_for('Trainer')}}">Trainer</a></li>
+            {% if session.logged_in %}
+            <li><a href="{{url_for('Form')}}">Form</a></li>
+            {% endif %}
+        </ul>
+    
+        <div class="main">
+            {% if session.logged_in %}
+            <a href="{{url_for('User')}}" class="user"><i class="ri-user-fill"></i>{{ session['user']['first_name'] }}</a>
+            {% else %}
+            <a href="{{url_for('Login')}}" class="user"><i class="ri-user-fill"></i>Sign In</a>
+            <a href="{{url_for('Register')}}">Register</a>
+            {% endif %}
+            <div class="bx bx-menu" id="menu-icon"></div>
+        </div>
+    </header>

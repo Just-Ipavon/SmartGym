@@ -1,0 +1,10 @@
+{
+    "name": "SmartGym",
+    "short_name": "SG",
+    "lang": "en-US",
+    "start_url": ".",
+    "display": "standalone",
+    "background_color": "#222327",
+    "theme_color": "#fd2929"
+  }
+  

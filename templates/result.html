@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    {% include 'includes/stylesheetAndFont.html' %}
+    <title>Workout Result</title>
+  </head>
+  <body id="resultsPage" onload="createWorkoutPage()">
+    {% include 'includes/_navbar.html' %}
+    <div class="tv-inner-banner-image" style="background-image: url('/static/images/Image7.jpg')">
+      <div class="tv-opacity-medium tv-bg-pink"></div>
+      <div class="tv-inner-banner-text">
+          <h3>Your Workout</h3>
+          <div class="tv-breadcrumb">
+              <a href="{{url_for('home')}}"><span>Home</span></a>&nbsp;&nbsp;&nbsp;/&nbsp;&nbsp;&nbsp;<span>Your Workout</span>
+          </div>
+      </div>
+  </div>
+  <div class="tv-contact-clear">
+    <div id="showName" class="tv-section-title">
+    </div>
+    <div id="instructions">
+    </div>
+    <div id="workoutOutline" class="ctc-box">
+      <div id="resultsTitle" class="tv-section-title">
+        <h3>
+          Here's your workout:
+        </h3>
+      </div>
+    </div>
+    <div id="workoutResults">
+    </div>
+    <div id="workoutTimer">
+    </div>
+  </div>
+    
+
+  </body>
+  <script src="/static/js/App.js"></script>
+</html>

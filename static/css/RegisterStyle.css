@@ -1,0 +1,332 @@
+/* ==========================================================================
+#COLOR
+========================================================================== */
+:root{
+    --bg-color: #fff;
+    --text-color: #fff;
+    --main-color: #fc328a;
+}
+
+/* ==========================================================================
+#GRID
+========================================================================== */
+.row {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-flex-wrap: wrap;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+}
+
+.row-space {
+    -webkit-box-pack: justify;
+    -webkit-justify-content: space-between;
+    -moz-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+}
+
+.col-2 {
+    width: -webkit-calc((100% - 30px) / 2);
+    width: -moz-calc((100% - 30px) / 2);
+    width: calc((100% - 30px) / 2);
+}
+
+@media (max-width: 767px) {
+    .col-2 {
+        width: 100%;
+    }
+}
+
+/* ==========================================================================
+#BACKGROUND
+========================================================================== */
+.bg-color {
+    background: var(--bg-color);
+}
+
+
+/* ==========================================================================
+#WRAPPER
+========================================================================== */
+.wrapper {
+    margin: 0 auto;
+}
+
+.wrapper--w960 {
+    max-width: 960px;
+}
+
+.wrapper--w780 {
+    max-width: 780px;
+}
+
+.wrapper--w680 {
+    max-width: 680px;
+}
+
+/* ==========================================================================
+#BUTTON
+========================================================================== */
+.btn {
+    display: inline-block;
+    line-height: 50px;
+    padding: 0 50px;
+    transition: all 0.4s ease;
+    cursor: pointer;
+    font-size: 18px;
+    color: var(--text-color);
+    font-family: "Poppins", "Arial", "Helvetica Neue", sans-serif;
+}
+
+.btn--radius {
+    border-radius: 3px;
+}
+
+.btn--radius-2 {
+    border-radius: 5px;
+}
+
+.btn--pill {
+    border-radius: 20px;
+}
+
+.btn--main {
+    background: var(--main-color);
+}
+
+.btn--main:hover {
+    
+    filter: brightness(70%);
+}
+
+/* ==========================================================================
+#FORM
+========================================================================== */
+input {
+    outline: none;
+    margin: 0;
+    border: none;
+    box-shadow: none;
+    width: 100%;
+    font-size: 14px;
+    font-family: inherit;
+}
+
+.input--style-4 {
+    line-height: 50px;
+    background: #fafafa;
+    box-shadow: inset 0px 1px 3px 0px rgba(0, 0, 0, 0.08);
+    border-radius: 5px;
+    padding: 0 20px;
+    font-size: 16px;
+    color: var(--main-color);
+    transition: all 0.4s ease;
+}
+
+.label {
+    font-size: 16px;
+    color: var(--main-color);
+    text-transform: capitalize;
+    display: block;
+    margin-bottom: 5px;
+}
+
+.radio-container {
+    display: inline-block;
+    position: relative;
+    padding-left: 30px;
+    cursor: pointer;
+    font-size: 16px;
+    color: var(--main-color);
+}
+
+.radio-container input {
+    position: absolute;
+    opacity: 0;
+    cursor: pointer;
+}
+
+.radio-container input:checked ~ .checkmark {
+    background-color: #e5e5e5;
+}
+
+.radio-container input:checked ~ .checkmark:after {
+    display: block;
+}
+
+.radio-container .checkmark:after {
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+    background: var(--main-color);
+}
+
+.checkmark {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    left: 0;
+    height: 20px;
+    width: 20px;
+    background-color: #e5e5e5;
+    border-radius: 50%;
+    box-shadow: inset 0px 1px 3px 0px rgba(0, 0, 0, 0.08);
+}
+
+.checkmark:after {
+    content: "";
+    position: absolute;
+    display: none;
+}
+
+.input-group {
+    position: relative;
+    margin-bottom: 22px;
+}
+
+.input-group-icon {
+    position: relative;
+}
+
+.input-icon {
+    position: absolute;
+    font-size: 18px;
+    color: #999;
+    right: 18px;
+    top: 50%;
+    transform: translateY(-50%);
+    cursor: pointer;
+}
+
+/* ==========================================================================
+#TITLE
+========================================================================== */
+.title {
+    font-size: 24px;
+    color: var(--main-color);
+    font-weight: 400;
+    margin-bottom: 40px;
+}
+
+/* ==========================================================================
+#CARD
+========================================================================== */
+.card {
+    border-radius: 3px;
+    background: #fff;
+}
+
+.card-4 {
+    background: var(--bg-color);
+    border-radius: 10px;
+    box-shadow: 0px 8px 20px 0px rgba(0, 0, 0, 0.15);
+}
+
+.card-4 .card-body {
+    padding: 57px 65px;
+    padding-bottom: 65px;
+}
+
+@media (max-width: 767px) {
+    .card-4 .card-body {
+        padding: 50px 40px;
+    }
+}
+
+.box-container {
+    display: inline-block;
+    position: relative;
+    padding-left: 30px;
+    cursor: pointer;
+    font-size: 16px;
+    color: var(--main-color);
+  }
+
+  .box-container input {
+    position: absolute;
+    opacity: 0;
+    cursor: pointer;
+  }
+  .checkmark2 {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    left: 0;
+    height: 20px;
+    width: 20px;
+    background-color: #e5e5e5;
+    border-radius: 10%;
+    box-shadow: inset 0px 1px 3px 0px rgba(0, 0, 0, 0.08);
+  }
+
+  .box-container input:checked ~ .checkmark2 {
+    background-color: var(--main-color);
+  }
+
+  .box-container input:checked ~ .checkmark2:after {
+    display: block;
+  }
+
+  .box-container .checkmark2:after {
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 12px;
+    height: 12px;
+    border-radius: 10%;
+    background: var(--main-color);
+  }
+/* ==========================================================================
+#PASSWD MESSAGE
+========================================================================== */
+
+#message {
+    background: var(--bg-color);
+    border-radius: 10px;
+    box-shadow: 0px 8px 20px 0px rgba(0, 0, 0, 0.15);
+    display:none;
+    color: var(--main-color);
+    position: absolute;
+    left:250px;
+    top:700px;
+}
+
+#message p {
+    border-radius: 5px;
+    padding: 0 20px;
+    font-size: 16px;
+}
+
+/* Add a green text color and a checkmark when the requirements are right */
+.valid {
+    color: green;
+}
+
+.MessageTitle{
+    font-size: 16px;
+    
+}
+
+.valid:before {
+    position: relative;
+    left: -15px;
+    content: "\2713";
+}
+
+/* Add a red text color and an "x" icon when the requirements are wrong */
+.invalid {
+    color: red;
+}
+
+.invalid:before {
+    position: relative;
+    left: -15px;
+    content: "\00D7";
+}

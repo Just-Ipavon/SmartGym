@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  
+    <meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Smart Gym</title>
+	<link rel="manifest" href="manifest.json">
+  {% include 'includes/stylesheetAndFont.html' %}
+	
+</head>
+<body>
+  
+  {% include 'includes/_navbar.html' %}
+  {% block content %}
+    {# Template inserted here #}
+  {% endblock %}
+  {% include 'includes/_footer.html' %}
+
+
+  <!-- Main JS-->
+  {% include 'includes/_javaScript.html' %}
+</body>
+</html>

@@ -1,0 +1,600 @@
+
+/* Landscape phones and smaller */
+
+@media (min-width: 1199px) and (max-width: 1300px) 
+{
+}
+
+@media (max-width: 1199px) 
+{
+
+}
+
+@media (min-width:1000px) and (max-width:1100px)
+{
+    .tv-menu {
+        font-size: 10px;
+        padding: 15px 10px !important;
+    }
+    .tv-service-content {
+        padding: 25px;
+    }
+    .comming-content {
+        left: 50%;
+        text-align: center;
+        top: 50%;
+        transform: translate(-50%, -50%);
+        width: 100%;
+    }
+    .comming-content h2 {
+        font-size:75px;
+    }
+    .tv-comming-soon {
+        background-size: unset;
+    }
+    .ctc-box.ctc-box-img p {
+        letter-spacing: 0.5px;
+        word-spacing: 0px;
+    }
+    .ctc-content p {
+        font-size: 12px;
+    }
+}
+
+@media (min-width:992px) and (max-width:999px)
+{
+    .tv-menu {
+        font-size: 10px;
+        padding: 15px 10px !important;
+    }
+    .tv-service-content {
+        padding: 25px;
+    }
+    .comming-content {
+        left: 50%;
+        text-align: center;
+        top: 50%;
+        transform: translate(-50%, -50%);
+        width: 100%;
+    }
+    .comming-content h2 {
+        font-size:75px;
+    }
+    .tv-comming-soon {
+        background-size: unset;
+    }
+    .ctc-box.ctc-box-img p {
+        letter-spacing: 0.5px;
+        word-spacing: 0px;
+    }
+    .ctc-content p {
+        font-size: 12px;
+    }
+}
+
+@media (min-width: 768px) and (max-width: 991px) 
+{
+    .navbar-default .navbar-nav > li > a:hover
+    {
+        color:#fc328a;
+    }
+    .navbar-header{
+        float: none;
+    }
+    .navbar-toggle {
+        display: block;
+    }
+    .navbar-collapse.collapse {
+        display: none!important;
+    }
+    .collapse.in, .tv-sub-sub-menu{
+        display:block !important;
+    }
+    .navbar-default .navbar-toggle {
+        border-color: transparent;
+        padding: 15px 10px;
+    }
+    .navbar-default .navbar-toggle .icon-bar {
+        background-color: #fc328a;
+    }
+    .navbar-default .menu-active > li > a:hover {
+        background-color: transparent;
+        color:#000000 !important;
+    }
+    .navbar-default .navbar-toggle:focus, .navbar-default .navbar-toggle:hover {
+        background-color: transparent;
+    }
+    .nav > li {
+        display:block;
+        position: relative;
+    }
+    .navbar-nav > li {
+        float: none;
+        text-align:left;
+    }
+    .navbar-nav .open .dropdown-menu {
+        background-color: transparent;
+        border: 0 none;
+        box-shadow: none;
+        float: none;
+        margin-top: 0;
+        position: static;
+        width: auto;
+    }
+    .navbar-fixed-bottom .navbar-collapse, .navbar-fixed-top .navbar-collapse {
+        max-height: 500px;
+    }
+    .tv-service-clear div:nth-child(2n+1)
+    {
+        clear:both;
+    }
+    .tv-service-clear div:nth-child(3n+1)
+    {
+        clear:none;
+    }
+    .tv-service-content {
+        padding: 52px 25px;
+    }
+    .tv-instructor-icon {
+        height: 40px;
+        padding: 1px 0;
+        width: 40px;
+    }
+    .tv-section-title > h3 {
+        font-size: 29px;
+    }
+    .tv-membership-details > h3 {
+        font-size: 25px;
+    }
+    .tv-membership-details > h4 {
+        font-size: 15px;
+    }
+    .tv-gallery-clear div:nth-child(3n+1) {
+        clear: none;
+    }
+    .tv-gallery-clear div:nth-child(2n+1) {
+        clear: both;
+    }
+    .tv-latestnews-clear div:nth-child(3n+1)
+    {
+        clear:none;
+    }
+    .tv-latestnews-clear div:nth-child(2n+1)
+    {
+        clear:both;
+    }
+    .tv-welcome-counter {
+        margin-bottom: 20px;
+    }
+    .comming-content {
+        left: 50%;
+        text-align: center;
+        top: 50%;
+        transform: translate(-50%, -50%);
+        width: 100%;
+    }
+    .comming-content h2 {
+        font-size:75px;
+    }
+    .tv-comming-soon {
+        background-size: unset;
+    }
+    .tv-inner-services-content h4 {
+        font-size: 14px;
+    }
+    .tv-inner-services-icon > img {
+        width: 40px;
+    }
+    .tv-inner-trainer-name {
+        padding: 20px 10px;
+    }
+    .tv-contact-clear div:nth-child(3n+1)
+    {
+        clear:none;
+    }
+    .tv-contact-clear div:nth-child(2n+1)
+    {
+        clear:both;
+    }
+}
+
+@media (min-width:600px) and (max-width: 767px) 
+{
+    .navbar-default .navbar-toggle {
+        border-color: transparent;
+        padding: 15px 10px;
+    }
+    .navbar-default .navbar-toggle .icon-bar {
+        background-color: #fc328a;
+    }
+    .navbar-default .navbar-toggle:focus, .navbar-default .navbar-toggle:hover {
+        background-color: transparent;
+    }
+    .tv-menu
+    {
+        text-align: left;
+    }
+    .navbar-default .navbar-nav .open .dropdown-menu > li > a {
+        color: #ffffff;
+    }
+    .navbar-default .navbar-nav .open .dropdown-menu > li > a:hover {
+        color: #fc328a;
+    }
+    .tv-banner-text {
+        color: #ffffff;
+        left: 50%;
+        position: absolute;
+        text-align: center;
+        top: 50%;
+        transform: translate(-50%, -50%);
+        width: 100%;
+    }
+    .tv-banner-text h3 , .tv-banner-text h1 {
+        color: #fc328a;
+    }
+    .tv-gyminstructor-block , .tv-section-title
+    {
+        text-align: center;
+    }
+    .tv-instructor-content {
+        margin-top: 20px;
+    }
+    .tv-banner-section-title, .tv-section1 {
+        margin: 0 auto 30px;
+        width: 100%;
+    }
+    .tv-membership-details {
+        margin-top: 20px;
+    }
+    .tv-footer-menu {
+        text-align: center;
+    }
+    .tv-copyright {
+        text-align: center;
+        float: none;
+    }
+    .tv-welcome-counter {
+        margin-bottom: 20px;
+    }
+    .comming-content {
+        left: 50%;
+        text-align: center;
+        top: 50%;
+        transform: translate(-50%, -50%);
+        width: 100%;
+    }
+    .comming-content h2 {
+        font-size:75px;
+    }
+    .comming-content {
+        left: 50%;
+        text-align: center;
+        top: 50%;
+        transform: translate(-50%, -50%);
+        width: 100%;
+    }
+    .comming-content h2 {
+        font-size:75px;
+    }
+    .tv-fixed-img {
+        overflow: visible;
+    }
+    .tv-goal-block {
+        margin-top: 20px;
+    }
+    .navbar-fixed-bottom .navbar-collapse, .navbar-fixed-top .navbar-collapse {
+        max-height: 300px;
+    }
+}
+
+@media (max-width: 599px) and (min-width: 501px)
+{
+    .tv-comming-soon {
+        background-size: unset;
+    }
+    .navbar-fixed-bottom .navbar-collapse, .navbar-fixed-top .navbar-collapse {
+        max-height:260px;
+    }
+}
+
+@media (min-width:501px) and (max-width:599px)
+{
+    .navbar-default .navbar-toggle {
+        border-color: transparent;
+        padding: 15px 10px;
+    }
+    .navbar-default .navbar-toggle .icon-bar {
+        background-color: #fc328a;
+    }
+    .navbar-default .navbar-toggle:focus, .navbar-default .navbar-toggle:hover {
+        background-color: transparent;
+    }
+    .tv-menu
+    {
+        text-align: left;
+    }
+    .navbar-default .navbar-nav .open .dropdown-menu > li > a {
+        color: #ffffff;
+    }
+    .navbar-default .navbar-nav .open .dropdown-menu > li > a:hover {
+        color: #fc328a;
+    }
+    .tv-banner-text {
+        color: #ffffff;
+        left: 50%;
+        position: absolute;
+        text-align: center;
+        top: 50%;
+        transform: translate(-50%, -50%);
+        width: 100%;
+    }
+    .tv-banner-text h3 , .tv-banner-text h1 {
+        color: #fc328a;
+    }
+    .tv-gyminstructor-block , .tv-section-title
+    {
+        text-align: center;
+    }
+    .tv-instructor-content {
+        margin-top: 20px;
+    }
+    .tv-banner-section-title, .tv-section1 {
+        margin: 0 auto 30px;
+        width: 100%;
+    }
+    .tv-membership-details {
+        margin-top: 20px;
+    }
+    .tv-footer-menu {
+        text-align: center;
+    }
+    .tv-copyright {
+        text-align: center;
+        float: none;
+    }
+    .tv-welcome-counter {
+        margin-bottom: 20px;
+    }
+    .comming-content {
+        left: 50%;
+        text-align: center;
+        top: 50%;
+        transform: translate(-50%, -50%);
+        width: 100%;
+    }
+    .comming-content h2 {
+        font-size:75px;
+    }
+    .comming-content {
+        left: 50%;
+        text-align: center;
+        top: 50%;
+        transform: translate(-50%, -50%);
+        width: 100%;
+    }
+    .comming-content h2 {
+        font-size:75px;
+    }
+    .tv-inner-trainer-name {
+        padding: 20px;
+    }
+    .tv-banner-text h1
+    {
+        font-size: 40px;
+    }
+}
+
+@media (max-width: 500px) 
+{
+    .navbar-default .navbar-toggle {
+        border-color: transparent;
+        padding: 15px 10px;
+    }
+    .navbar-default .navbar-toggle .icon-bar {
+        background-color: #fc328a;
+    }
+    .navbar-default .navbar-toggle:focus, .navbar-default .navbar-toggle:hover {
+        background-color: transparent;
+    }
+    .tv-menu
+    {
+        text-align: left;
+    }
+    .navbar-default .navbar-nav .open .dropdown-menu > li > a {
+        color: #ffffff;
+    }
+    .navbar-default .navbar-nav .open .dropdown-menu > li > a:hover {
+        color: #fc328a;
+    }
+    .tv-banner-text {
+        color: #ffffff;
+        left: 50%;
+        position: absolute;
+        text-align: center;
+        top: 50%;
+        transform: translate(-50%, -50%);
+        width: 100%;
+    }
+    .tv-banner-text h3 , .tv-banner-text h1 {
+        color: #fc328a;
+    }
+    .tv-gyminstructor-block , .tv-section-title
+    {
+        text-align: center;
+    }
+    .tv-instructor-content {
+        margin-top: 20px;
+    }
+    .tv-banner-section-title, .tv-section1 {
+        margin: 0 auto 30px;
+        width: 100%;
+    }
+    .tv-membership-details {
+        margin-top: 20px;
+    }
+    .tv-footer-menu {
+        text-align: center;
+    }
+    .tv-copyright {
+        text-align: center;
+        float: none;
+    }
+    .tv-welcome-counter {
+        margin-bottom: 20px;
+    }
+    .tv-section-title h4 {
+        font-size: 14px;
+        line-height: 20px;
+    }
+    .comming-content {
+        left: 50%;
+        text-align: center;
+        top: 50%;
+        transform: translate(-50%, -50%);
+        width: 100%;
+    }
+    .comming-content h2 {
+        font-size:75px;
+    }
+    .tv-comming-soon {
+        background-size: unset;
+    }
+    .tv-bmi-block {
+        margin-left: 47px;
+    }
+    .tv-goal-block {
+        margin-top: 20px;
+    }
+    .tv-inner-trainer-name {
+        padding: 20px;
+    }
+    .tv-banner-text h1
+    {
+        font-size: 40px;
+    }
+}
+
+@media (max-width: 400px) 
+{
+    .navbar-default .navbar-toggle {
+        border-color: transparent;
+        padding: 15px 10px;
+    }
+    .navbar-default .navbar-toggle .icon-bar {
+        background-color: #fc328a;
+    }
+    .navbar-default .navbar-toggle:focus, .navbar-default .navbar-toggle:hover {
+        background-color: transparent;
+    }
+    .tv-menu
+    {
+        text-align: left;
+    }
+    .navbar-default .navbar-nav .open .dropdown-menu > li > a {
+        color: #ffffff;
+    }
+    .navbar-default .navbar-nav .open .dropdown-menu > li > a:hover {
+        color: #fc328a;
+    }
+    .tv-banner-text {
+        color: #ffffff;
+        left: 50%;
+        position: absolute;
+        text-align: center;
+        top: 50%;
+        transform: translate(-50%, -50%);
+        width: 100%;
+    }
+    .tv-banner-text h3 , .tv-banner-text h1 {
+        color: #fc328a;
+    }
+    .tv-banner-text h1
+    {
+        font-size: 40px;
+    }
+    .tv-gyminstructor-block , .tv-section-title
+    {
+        text-align: center;
+    }
+    .tv-instructor-content {
+        margin-top: 20px;
+    }
+    .tv-banner-section-title, .tv-section1 {
+        margin: 0 auto 30px;
+        width: 100%;
+    }
+    .tv-membership-details {
+        margin-top: 20px;
+    }
+    .tv-footer-menu {
+        text-align: center;
+    }
+    .tv-copyright {
+        text-align: center;
+    }
+    .tv-welcome-counter {
+        margin-bottom: 20px;
+    }
+    .tv-section-title > h3 {
+        font-size: 23px;
+    }
+    .tv-section-title h4 {
+        font-size: 14px;
+        line-height: 20px;
+    }
+    .tv-aboutus-opening .tv-opening-hours ul li {
+        font-size: 11px;
+        font-weight: 700;
+    }
+    .tv-aboutus-opening {
+        margin-top: 20px;
+    }
+    .tv-404-block h1 {
+        font-size: 32px;
+        line-height: 40px;
+    }
+    .tv-404-desc h4 {
+        line-height: 30px;
+    }
+    .tv-404-desc a {
+        display: block;
+    }
+    .tv-404-desc > p {
+        line-height: 22px;
+    }
+    .comming-content {
+        left: 50%;
+        text-align: center;
+        top: 50%;
+        transform: translate(-50%, -50%);
+        width: 100%;
+    }
+    .comming-content h2 {
+        font-size: 50px;
+    }
+    .tv-comming-soon {
+        background-size: unset;
+    }
+    .tv-bmi-block {
+        margin-left: 32px;
+    }
+    .tv-goal-block {
+        margin-top: 20px;
+    }
+    .tv-inner-trainer-name {
+        padding: 20px;
+    }
+    .ctc-box.ctc-box-img p {
+        letter-spacing: 0.5px;
+        word-spacing: 0px;
+    }
+    .ctc-content p {
+        font-size: 12px;
+    }
+}
+
+
+
+
+
+

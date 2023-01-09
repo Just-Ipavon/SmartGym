@@ -1,0 +1,91 @@
+{% extends "template.html" %}
+
+{% block content %}
+
+        <div class="tv-inner-banner-image" style="background-image: url('/static/images/Image4.jpg')">
+            <div class="tv-opacity-medium tv-bg-pink"></div>
+            <div class="tv-inner-banner-text">
+                <h3>Contact Us</h3>
+                <div class="tv-breadcrumb">
+                    <a href="{{url_for('home')}}"><span>Home</span></a>&nbsp;&nbsp;&nbsp;/&nbsp;&nbsp;&nbsp;<span>Contact Us</span>
+                </div>
+            </div>
+        </div>
+        <!--End Header Section-->
+
+        <!--Contact Section-->
+        <section class="tv-section-padding">
+            <div class="container">
+                <div class="row">
+                    <div class="tv-contact-clear">
+                        <div class="col-md-4 col-sm-6 col-xs-12">
+                            <div class="tv-section-title">
+                                <h3>Location</h3>
+                            </div>
+                            <div class="ctc-box">
+                                <div class="ctc-content">
+                                    <i class="icon_mobile"></i>
+                                    <p>Phone: 3248210504 - 3455371132 - 3283525048
+                                        <br> Fax: 02 9835 0247</p>
+                                </div>
+                                <div class="ctc-content">
+                                    <i class="icon_globe-2"></i>
+                                    <p>CS University of Naples "Parthenope"
+                                        <br> Isola C4, Centro Direzionale, Napoli 80143</p>
+                                </div>
+                                <div class="ctc-content">
+                                    <i class="icon_pin_alt"></i>
+                                    <p>smartgymdev@gmail.com
+                                        <br>smartsupport@gmail.com</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-4 col-sm-6 col-xs-12">
+                            <div class="tv-section-title">
+                                <h3>Opening Time</h3>
+                            </div>
+                            <div class="ctc-box ctc-box-img" style="border:none;">
+                                <ul>
+                                    <li>
+                                        <p>Tuesday : 10:00 am &ndash; 7:00 pm</p>
+                                    </li>
+                                    <li>
+                                        <p>Wednesday : 11:00 am &ndash; 8:00 pm</p>
+                                    </li>
+                                    <li>
+                                        <p>Thursday : 11:00 am &ndash; 8:00 pm</p>
+                                    </li>
+                                    <li>
+                                        <p>Friday : 9:00 am &ndash; 6:00 pm</p>
+                                    </li>
+                                    <li>
+                                        <p>Saturday : 9:00 am &ndash; 6:00 pm</p>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+
+                        <div class="col-md-4 col-sm-6 col-xs-12">
+                            <div class="tv-section-title">
+                                <h3>Get Connected us</h3>
+                            </div>
+                            <div class="ctc-box">
+                                <div class="ctc-link">
+                                    <p>Here you can find all our socials to get more information about our services. Please feel free to contact us.</p>
+                                    <ul>
+                                        <li><a href="#"><i class="social_facebook_square"></i></a></li>
+                                        <li><a href="#"><i class="social_twitter_square"></i></a></li>
+                                        <li><a href="#"><i class="social_dribbble_square"></i></a></li>
+                                        <li><a href="#"><i class="social_instagram_square"></i></a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!--End Contact Section-->
+
+
+        {% endblock %}
