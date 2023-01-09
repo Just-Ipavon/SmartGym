@@ -1,4 +1,4 @@
-# Workout Project, Univerisà Degli studi di Napoli Parthenope AA 2022/2023
+# Web Technologies Project, Univerisà Degli studi di Napoli Parthenope AA 2022/2023
 
 ## Group Members
 
